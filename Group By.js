@@ -83,7 +83,7 @@ The selector function splits the array by whether each number is greater than 5.
  */
  
   Array.prototype.groupBy = function(fn) {
-  // Use reduce to iterate over the array and create the grouped object
+   // Use reduce to iterate over the array and create the grouped object
   return this.reduce((grouped, item) => {
     // Call the provided callback function to get the key
     const key = fn(item);
